@@ -8,8 +8,13 @@
     </head>
     <body>
         <div class="page-container">
-            <div class="header">Хэдер</div>
-            <div class="nav">
+            <!-- Изменение: Заменили div на семантический тег -->
+            <header class="header">
+                <h1>Контакты</h1> <!-- Добавили осмысленный заголовок -->
+            </header>
+
+            <!-- Изменение: Заменили div на семантический тег -->
+            <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
@@ -17,20 +22,50 @@
                     <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <div class="contacts-container">
-                    <h2 class="section-title">Контакты</h2>
-                    <div class="contact-info">
+            </nav>
+
+            <!-- Изменение: Заменили div на семантический тег -->
+            <main class="content">
+                <!-- Изменение: Заменили div на семантический тег -->
+                <section class="contacts-container">
+                    <h2 class="section-title">Наши контакты</h2>
+                    
+                    <!-- Изменение: Заменили div на семантический тег -->
+                    <article class="contact-info">
+                        <h3>Электронная почта</h3>
                         <p>Адрес электронной почты: astafev@mirea.ru</p>
-                    </div>
-                    <div class="contact-info">
+                    </article>
+                    
+                    <!-- Изменение: Заменили div на семантический тег -->
+                    <article class="contact-info">
+                        <h3>Физический адрес</h3>
                         <p>Адрес: г. Москва, ул. Пушкина, д. Колотушкина</p>
+                    </article>
+
+                    <!-- Добавили карту контактов с CSS Grid -->
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <h3>Телефон</h3>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Время работы</h3>
+                            <p>Пн-Пт: 9:00-18:00</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Социальные сети</h3>
+                            <p>VK, Telegram, WhatsApp</p>
+                        </div>
                     </div>
-                    <button class="contact-button">Позвоните мне</button>
-                </div>
-            </div>
-            <div class="footer">Футер</div>    
+                    
+                    <button class="contact-button">Связаться с нами</button>
+                </section>
+            </main>
+
+            <!-- Изменение: Заменили div на семантический тег -->
+            <footer class="footer">
+                <p>© 2024 Все права защищены. Контактная информация</p>
+            </footer>    
         </div>
     </body>
 </html>
