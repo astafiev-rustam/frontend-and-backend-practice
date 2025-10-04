@@ -1,84 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <!-- Изменение: Заменили div на семантический тег -->
-            <header class="header">
-                <h1>Наши товары</h1> <!-- Добавили осмысленный заголовок -->
-            </header>
-
-            <!-- Изменение: Заменили div на семантический тег -->
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-
-            <!-- Изменение: Заменили div на семантический тег -->
-            <main class="content">
-                <!-- Изменение: Заменили div на семантический тег -->
-                <section class="products-section">
-                    <h2 class="section-title">Каталог товаров</h2>
-                    <p class="section-description">Мы предлагаем широкий ассортимент качественных товаров по доступным ценам</p>
-                    
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <div class="products-grid">
-                        <!-- Изменение: Заменили div на семантический тег -->
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <img class="product-image" src="../images/goods1.jpg" alt="Современный ноутбук для работы и игр">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name">Производительный ноутбук</h3>
-                                <p class="product-description">Мощный ноутбук для работы, учебы и развлечений с современными характеристиками</p>
-                                <p class="product-price">85 990 ₽</p>
-                                <button class="product-button">В корзину</button>
-                            </div>
-                        </article>
-                        
-                        <!-- Изменение: Заменили div на семантический тег -->
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <img class="product-image" src="../images/goods2.jpg" alt="Смартфон последней модели">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name">Флагманский смартфон</h3>
-                                <p class="product-description">Инновационный смартфон с лучшей камерой и производительностью на рынке</p>
-                                <p class="product-price">64 990 ₽</p>
-                                <button class="product-button">В корзину</button>
-                            </div>
-                        </article>
-                        
-                        <!-- Изменение: Заменили div на семантический тег -->
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <img class="product-image" src="../images/goods3.jpg" alt="Беспроводные наушники">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name">Беспроводные наушники</h3>
-                                <p class="product-description">Качественные наушники с шумоподавлением и длительным временем работы</p>
-                                <p class="product-price">12 990 ₽</p>
-                                <button class="product-button">В корзину</button>
-                            </div>
-                        </article>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Товары</h1>
+                        <p class="mb-0 opacity-75">Мои работы и услуги</p>
                     </div>
-                </section>
-            </main>
+                </div>
+            </div>
+        </header>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <footer class="footer">
-                <p>© 2024 Интернет-магазин. Все права защищены.</p>
-            </footer>    
-        </div>
-    </body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html">
+                                <i class="bi bi-code-slash me-1"></i>Практики
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="goods.html">
+                                <i class="bi bi-cart me-1"></i>Товары
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <h2 class="card-title h5 mb-0">
+                        <i class="bi bi-bag-check text-primary"></i>
+                        Доступные товары и услуги
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../images/goods1.jpg" class="card-img-top" alt="Веб-сайт" style="height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Разработка веб-сайта</h5>
+                                    <p class="card-text flex-grow-1">
+                                        Создание адаптивного веб-сайта с современным дизайном на Bootstrap.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary mb-0">5 000 ₽</span>
+                                            <button class="btn btn-primary btn-sm">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../images/goods2.jpg" class="card-img-top" alt="UI/UX дизайн" style="height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">UI/UX дизайн</h5>
+                                    <p class="card-text flex-grow-1">
+                                        Проектирование пользовательских интерфейсов и создание макетов.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary mb-0">3 000 ₽</span>
+                                            <button class="btn btn-primary btn-sm">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../images/goods3.jpg" class="card-img-top" alt="Консультация" style="height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Консультация</h5>
+                                    <p class="card-text flex-grow-1">
+                                        Консультация по веб-разработке и помощь в решении технических задач.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary mb-0">1 000 ₽</span>
+                                            <button class="btn btn-primary btn-sm">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2024 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -4,51 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости - Портфолио</title>
-    <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body>
-    <div class="page">
-        <header class="header">
-            <h1 class="header__title">Новости</h1>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Новости</h1>
+                        <p class="mb-0 opacity-75">Последние обновления и события</p>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="../index.html">Главная</a>
-                </li>
-                <li class="nav__item nav__item--active">
-                    <a class="nav__link" href="news.html">Новости</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html">
+                                <i class="bi bi-code-slash me-1"></i>Практики
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="goods.html">
+                                <i class="bi bi-cart me-1"></i>Товары
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <main class="main">
-            <section class="news">
-                <h2 class="news__title">Последние новости</h2>
-                
-                <div class="news__list">
-                    <article class="news-item">
-                        <h3 class="news-item__title">Защита проекта</h3>
-                        <p class="news-item__date">10 декабря 2024</p>
-                        <p class="news-item__text">Успешно защитил учебный проект по веб-разработке.</p>
-                    </article>
-                    
-                    <article class="news-item">
-                        <h3 class="news-item__title">Новый сайт</h3>
-                        <p class="news-item__date">1 декабря 2024</p>
-                        <p class="news-item__text">Запустил новый сайт-портфолио.</p>
-                    </article>
+        <main class="container my-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <h2 class="card-title h5 mb-0">
+                        <i class="bi bi-megaphone text-primary"></i>
+                        Последние новости
+                    </h2>
                 </div>
-            </section>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h5 class="card-title">Защита дипломного проекта</h5>
+                                        <span class="badge bg-success">Новое</span>
+                                    </div>
+                                    <p class="card-text text-muted small mb-2">
+                                        <i class="bi bi-calendar me-1"></i>15 декабря 2024
+                                    </p>
+                                    <p class="card-text">
+                                        Успешно защитил дипломный проект по теме "Разработка веб-приложения для управления задачами".
+                                        Проект получил высокую оценку комиссии.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Новый проект на React</h5>
+                                    <p class="card-text text-muted small mb-2">
+                                        <i class="bi bi-calendar me-1"></i>1 декабря 2024
+                                    </p>
+                                    <p class="card-text">
+                                        Начал работу над новым проектом с использованием React и TypeScript.
+                                        Планирую реализовать современный UI с анимациями.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Участие в хакатоне</h5>
+                                    <p class="card-text text-muted small mb-2">
+                                        <i class="bi bi-calendar me-1"></i>20 ноября 2024
+                                    </p>
+                                    <p class="card-text">
+                                        Принял участие в студенческом хакатоне по веб-разработке.
+                                        Наша команда заняла 2 место с проектом "Умный планировщик задач".
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <footer class="footer">
-            <p class="footer__text">&copy; 2024 Мой сайт</p>
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2024 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
