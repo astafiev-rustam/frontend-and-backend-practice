@@ -1,77 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Новости</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <!-- Изменение: Заменили div на семантический тег -->
-            <header class="header">
-                <h1>Новости</h1> <!-- Добавили осмысленный заголовок -->
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Портфолио</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Новости</h1>
+        </header>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <main class="content">
-                <!-- Изменение: Заменили div на семантический тег -->
-                <section class="news-container">
-                    <h2 class="section-title">Последние новости</h2>
-                    
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Запуск нового проекта</h2>
-                            <p class="news-meta">01.01.2025 12:00 | Автор: Р.У. Астафьев</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Текст новости 1. Мы рады сообщить о запуске нового проекта, который изменит подход к веб-разработке. Проект включает в себя современные технологии и инновационные решения.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
+        <main class="main">
+            <section class="news">
+                <h2 class="news__title">Последние новости</h2>
+                
+                <div class="news__list">
+                    <article class="news-item">
+                        <h3 class="news-item__title">Защита проекта</h3>
+                        <p class="news-item__date">10 декабря 2024</p>
+                        <p class="news-item__text">Успешно защитил учебный проект по веб-разработке.</p>
                     </article>
                     
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Обновление дизайна</h2>
-                            <p class="news-meta">01.01.2025 12:00 | Автор: Р.У. Остафьев</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Текст новости 2. Представляем вашему вниманию обновленный дизайн нашего портала. Мы улучшили пользовательский опыт и добавили новые функции для вашего удобства.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
+                    <article class="news-item">
+                        <h3 class="news-item__title">Новый сайт</h3>
+                        <p class="news-item__date">1 декабря 2024</p>
+                        <p class="news-item__text">Запустил новый сайт-портфолио.</p>
                     </article>
-                    
-                    <!-- Изменение: Заменили div на семантический тег -->
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Новые возможности</h2>
-                            <p class="news-meta">01.01.2025 12:00 | Автор: Р.У. Естафьев</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Текст новости 3. Расширяем функциональность платформы. Теперь доступны новые инструменты для разработки и тестирования веб-приложений.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                </section>
-            </main>
+                </div>
+            </section>
+        </main>
 
-            <!-- Изменение: Заменили div на семантический тег -->
-            <footer class="footer">
-                <p>© 2024 Новостной портал. Все права защищены.</p>
-            </footer>    
-        </div>
-    </body>
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </footer>
+    </div>
+</body>
 </html>
